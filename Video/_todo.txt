@@ -1,0 +1,17 @@
+TEXTOS, ARTIGOS, ETC
+Texto: How to embed everything? (http://www.labnol.org/internet/how-to-embed-in-html-webpages/6365/)
+
+SUGESTÕES
+
+embed facebook videos.
+    https://www.facebook.com/video/video.php?v=3859524410543
+    Miniatura: https://graph.facebook.com/3859524410543/picture
+    Nota: Faltando a imagem e o título da página. Onde pegar?
+    Página com a documentação da API de vídeos do facebook. Aparentemente é
+    necessária uma conexão via oAuth para pegar os dados
+    https://developers.facebook.com/docs/reference/api/video/
+    
+embed picasa slideshows
+embed flickr slideshows
+embed google docs
+embed maps

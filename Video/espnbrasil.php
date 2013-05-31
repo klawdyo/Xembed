@@ -1,0 +1,41 @@
+<?php
+/*
+    ---------------------------------------------------------------------------
+    COPYRIGHT
+    ---------------------------------------------------------------------------
+    @author José Cláudio Medeiros de Lima <klawdyo@gmail.com>
+    @version 0.5 27/05/2013
+
+    ---------------------------------------------------------------------------
+    DESCRIPTION
+    ---------------------------------------------------------------------------
+    Retorna os dados do site de vídeos ESPN Brasil
+
+*/
+class espnbrasil{
+    
+    
+    /**
+      * Pega os dados dos vídeos do site ESPN Brasil
+      *
+      * @version
+      *     0.1 26/08/2012 Initial
+      *     0.2 01/09/2012 Consertado erro na url do player
+      *     0.3 05/09/2012 Método renomeado para details() e separado da classe Video
+      *     0.4 06/09/2012 details() não retorna mais a chave 'thumbs', pois a chave
+      *         'image' é mais unificada e todos os sites retornam por igual.
+      *         - details() agora retorna a chave 'playerType', que indica
+      *         se a exibição é através de iframe, object, script, etc.
+      *     0.5 27/05/2013 'player' não utiliza mais o link do "estadao"
+      */
+    public static function details($id, $url){
+        $data = Video::openGraph($url);
+        
+        return array(
+            'title' => $data['title'],
+            'image' => $data['image'],
+            'playerType' => 'iframe',
+            'player' => 'http://espn.com.br/swf/main.swf?contentId=' . $id . '&widthImage=622&widthThumb=131',
+        );
+    }
+}
