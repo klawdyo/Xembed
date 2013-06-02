@@ -49,9 +49,16 @@
         //'http://br.esporteinterativo.yahoo.com/video/flamengo-sai-perdendo-por-2-010024496.html',
         //'http://br.esporteinterativo.yahoo.com/video/saint-andre-usar%C3%A1-tour-nova-194641930.html',
         
+        #flickr
+        //'http://www.flickr.com/photos/klawdyo/sets/72157618525048702/',
+        //'http://www.flickr.com/photos/shadowplay/sets/59801/',
+        
         #foxsports
         //'http://www.foxsports.com.br/videos/42637275-assista-ao-gol-de-all-boys-0-x-1-argentinos-juniors',
         //'http://www.foxsports.com.br/videos/42664732-assista-aos-melhores-lances-de-chievo-1-x-3-lazio',
+        
+        #funnyordie
+        'http://www.funnyordie.com/videos/fa60d86785/anchorman-2-official-teaser-trailer-2?playlist=featured_videos',
         
         #globotv
         //'http://globotv.globo.com/rede-globo/globo-esporte-sp/t/edicoes/v/arouca-curte-a-primeira-convocacao-para-a-selecao-brasileira/2106745/',
@@ -80,6 +87,10 @@
         #olhardigital
         //'http://olhardigital.uol.com.br/negocios/central_de_videos/iphone-5-conheca-os-recursos-que-podem-pintar-no-novo-aparelho#|0|0|1|99',
         //'http://olhardigital.uol.com.br/produtos/central_de_videos/dia-dos-pais-geek#|0|0|1|99',
+        
+        #PhotoBucket - NÃO FUNCIONA
+        //'http://s55.photobucket.com/albums/g134/klawdyossauro/',
+        //'http://s55.photobucket.com/albums/g134/klawdyossauro/imagens%20para%20foruns/',
         
         #R7
         //'http://esportes.r7.com/videos/exclusivo-paulinho-fala-sobre-selecao-futuro-no-corinthians-e-mundial/idmedia/5038d63d6b71cc1ec4d91969.html',
