@@ -126,8 +126,8 @@
         
         #yfrog
         //'http://twitter.yfrog.com/mzbnczogslfypthuglyxolnaz',
-        'http://twitter.yfrog.com/jv4a5grijbjslronrzlhdqzqz',
-        'http://yfrog.com/jj7zrsaetuufhrtbhdfargcrz',
+        //'http://twitter.yfrog.com/jv4a5grijbjslronrzlhdqzqz',
+        //'http://yfrog.com/jj7zrsaetuufhrtbhdfargcrz',
         
         #youtube
         //'http://www.youtube.com/watch?v=r_vf4ENRua8&feature=g-all-u',
