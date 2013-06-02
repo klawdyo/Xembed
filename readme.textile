@@ -1,0 +1,63 @@
+h1. Descrição
+
+A class Video retorna os dados de um vídeo informando apenas a url. Se for algum dos sites suportados, Video retorna o título, uma miniatura, a url do player. Dados suficientes para listá-los e exibí-los em qualquer página da web.
+Em conjunto com essa class, trabalha o "XembedHelper":https://github.com/klawdyo/New-Spaghetti-Core/wiki/lib-helpers-XembedXelper, que facilita a inclusão dessas informações na página.
+
+h4. Observações
+
+Por questões de performance, já que todos os sites suportados fazem uso de requisições às páginas oficiais, é recomendado que o programador use os dados retornados por essa classe para salvar as informações no banco de dados, diminuindo o acesso a sites de terceiros e melhorando a velocidade da sua aplicação.
+
+h2. Sites suportados
+
+* "Dailymotion":http://www.dailymotion.com
+* "ESPN Brasil":http://espn.estadao.com.br/
+* "Esporte Interativo":http://www.esporteinterativo.com.br
+* "Globo TV":http://globotv.globo.com/
+* "iG":http://tvig.ig.com.br/
+* "Metacafe":http://www.metacafe.com/
+* "MSN Vídeo":http://video.br.msn.com/
+* "OlharDigital":http://olhardigital.uol.com.br
+* "R7":http://videos.r7.com/
+* "RedeTV":http://www.redetv.com.br/
+* "Scribd":http://scribd.com/
+* "Slideshare":http://www.slideshare.net/
+* "UOL Mais":http://mais.uol.com.br/
+* "VideoLOG":http://videlog.tv
+* "Vimeo":http://vimeo.com/
+* "Vírgula":http://virgula.uol.com.br/
+* "Youtube":http://www.youtube.com/
+
+
+h2. Métodos
+
+h3. Video::details($url);
+
+Retorna os dados do vídeo a partir da url.
+
+h3. Video::oEmbed($service, $url);
+
+Retorna os dados oEmbed dos sites suportados, informando apenas o nome do serviço e a url.
+
+h3. Video::getContents($url);
+
+Retorna o html da página informada em $url. 
+Esse método faz uso da propriedade Video::$cUrl. Se essa propriedade for TRUE, será usado o cURL ao invés do file_get_contents().
+
+h2. Exemplos de uso
+
+h3. Video::details('http://www.youtube.com/watch?v=r_vf4ENRua8')
+
+pre. Array
+(
+    [id] => r_vf4ENRua8
+    [url] => http://www.youtube.com/watch?v=r_vf4ENRua8
+    [title] => Complemento Nominal - Márcio Wesley
+    [image] => http://i3.ytimg.com/vi/r_vf4ENRua8/hqdefault.jpg
+    [player] => http://www.youtube.com/embed/r_vf4ENRua8?fs=1&feature=oembed
+    [service] => youtube
+    [playerType] => iframe
+)
+
+h2. Mais Informações
+
+A maioria dos sites acima usam o padrão aberto chamado oEmbed (alguns usam o padrão OpenGraph e outros usam padrão próprio) para a busca dos dados dos vídeos. No entanto, nem todos dispõem essas informações de forma aberta, portanto, em alguns casos, Video necessita analisar html da página do vídeo para buscar alguma informação que esteja em falta. Nesse caso, eventualmente a classe pode deixar de retornar alguns dados em algum site específico, caso haja modificações na página oficial.
