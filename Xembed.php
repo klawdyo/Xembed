@@ -1,6 +1,7 @@
 <?php
-require_once 'lib/utils/Video.php';
-require_once 'lib/core/common/String.php';
+require_once 'Lib/Html.php';
+require_once 'Lib/String.php';
+require_once 'Video.php';
 
 /** ---------------------------------------------------------------------------
     COPYRIGHT
@@ -19,14 +20,14 @@ require_once 'lib/core/common/String.php';
     ---------------------------------------------------------------------------
     //Criando uma vitrine de vídeos, podendo receber 1 ou mais vídeos como
     //parâmetro
-    echo $this->Xembed->showcase('http://www.metacafe.com/watch/8993220/');
-    echo $this->Xembed->showcase(array(
+    echo Xembed::showcase('http://www.metacafe.com/watch/8993220/');
+    echo Xembed::showcase(array(
                         'http://www.metacafe.com/watch/8993220/',
                         'http://pt.scribd.com/doc/103716634/Building-a-Desire-Engine'
                  ));
     
     //Exibe um vídeo
-    echo $this->Xembed->embed('http://www.metacafe.com/watch/8993220/');
+    echo Xembed::embed('http://www.metacafe.com/watch/8993220/');
     
     ---------------------------------------------------------------------------
     CHANGELOG
@@ -35,6 +36,9 @@ require_once 'lib/core/common/String.php';
     [+] showcase() cria uma vitrine com 1 ou mais vídeos
     [+] embed() cria o html para exibição de um vídeo
     
+    01/06/2013
+    [m] Todos os métodos transformados em Static
+    [m] Classe renomeada para Xembed
     
     ---------------------------------------------------------------------------
     KNOW BUGS
@@ -47,19 +51,19 @@ require_once 'lib/core/common/String.php';
  
 */
 
-class XembedHelper extends Helper{
+class Xembed extends Html{
     /**
       * @var string
       * Classe css a ser incluída nos itens da lista de vídeos
       */
-    public $itemClass = 'xembed item';
+    public static $itemClass = 'xembed item';
     
     /**
       * @var string
       * Html dos itens da lista de vídeos. As palavras precedidas por dois-pontos
       * são variáveis que serão substituídas pelos dados retornados por Video::details()
       */
-    public $itemHtml = '<li class=":itemClass"><dl><dt><img src=":image"></dt><dd>:title</dd><dd><a href=":url">:url</a></dd></dl></li>';
+    public static $itemHtml = '<li class=":itemClass"><dl><dt><img src=":image"></dt><dd>:title</dd><dd><a href=":url">:url</a></dd></dl></li>';
 
     /**
       * Exibe uma vitrine com 1 ou mais vídeos
@@ -69,19 +73,20 @@ class XembedHelper extends Helper{
       *     0.2 31/08/2012 Nem sempre Video::details retornava um array, e isso
       *         gerava erro quando inseríamos um vídeo de um provedor não supor-
       *         tado
+      *     0.3 01/06/2013 Método transformado em static
       */
-    public function showcase($url){
+    public static function showcase($url){
         $html = '';
         if(is_array($url)){
             foreach($url as $video){
-                $html .= $this->showcase($video);
+                $html .= self::showcase($video);
             }
         }
         else{
             if(is_array($data = Video::details($url))){
                 array_unset($data, 'thumbs');
-                $data['itemClass'] = $this->itemClass;
-                $html = String::insert($this->itemHtml, $data);
+                $data['itemClass'] = self::$itemClass;
+                $html = String::insert(self::$itemHtml, $data);
             }
         }
         
@@ -99,8 +104,9 @@ class XembedHelper extends Helper{
       *         vem a url do script
       *     0.3 16/09/2012 O segundo parâmetro pode passar atributos para o elemento
       *         gerado.
+      *     0.4 01/06/2013 Método transformado em static
       */
-    public function embed($url, $params = array()){
+    public static function embed($url, $params = array()){
         $data = Video::details($url);
         
         //pr($data);
@@ -109,7 +115,7 @@ class XembedHelper extends Helper{
         
         $params = array_merge($params, array('src' => $data['player']));
         
-        return $this->Html->tag($playerType, null, $params);
+        return self::tag($playerType, null, $params);
     }
     
     
