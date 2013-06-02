@@ -16,6 +16,7 @@ h2. Sites suportados
 * -"Facebook":http://facebook.com - Exige autenticação oAuth - Não implementada-
 * "Flickr":http://flickr.com
 * "FoxSports":http://foxsports.com.br
+* "FunnyOrDie":http://www.funnyordie.com/
 * "Globo TV":http://globotv.globo.com/
 * "iG":http://tvig.ig.com.br/
 * "Metacafe":http://www.metacafe.com/

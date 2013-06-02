@@ -164,6 +164,9 @@ set_time_limit(0);
     [m] Band teve suas urls modificadas, podendo ser de 2 tipos, e agora usa o
         padrão de vídeos do UolMais
     
+    02/06/2013
+    [+] FunnyOrDie adicionado
+    
     ---------------------------------------------------------------------------
     KNOWN BUGS
     ---------------------------------------------------------------------------
@@ -224,6 +227,9 @@ class Video{
         
         //view-source:http://www.foxsports.com.br/videos/42664732-assista-aos-melhores-lances-de-chievo-1-x-3-lazio
         'foxsports' => '%foxsports.com.br/videos/(?<id>\d+)-[0-9a-z-]+%',
+        
+        //http://www.funnyordie.com/videos/fa60d86785/anchorman-2-official-teaser-trailer-2?playlist=featured_videos
+        'funnyordie' => '%funnyordie.com/videos/(?<id>[0-9a-f]+)/%',
         
         //http://globotv.globo.com/rede-globo/globo-esporte-sp/v/globo-esporte-compara-os-discursos-de-apresentacao-de-adriano-no-flamengo-e-corinthians/2105335/
         //http://g1.globo.com/jornal-nacional/videos/t/edicoes/v/brasileiros-vao-as-compras-para-aproveitar-o-possivel-fim-do-ipi-reduzido/2107606/
@@ -303,6 +309,7 @@ class Video{
       */
     public static $oEmbedUrls = array(
         'dailymotion' => 'http://www.dailymotion.com/api/oembed?url=:url&format=json',
+        'funnyordie' => 'http://www.funnyordie.com/oembed?format=json&url=:url',
         'scribd' => 'http://www.scribd.com/services/oembed?url=:url&format=json',
         'slideshare' => 'http://www.slideshare.net/api/oembed/1?url=:url&format=json',
         'vimeo' => 'http://vimeo.com/api/oembed.xml?url=:url&format=json',
