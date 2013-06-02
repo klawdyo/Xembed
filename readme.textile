@@ -1,7 +1,7 @@
 h1. Descrição
 
 A class Video retorna os dados de um vídeo informando apenas a url. Se for algum dos sites suportados, Video retorna o título, uma miniatura, a url do player. Dados suficientes para listá-los e exibí-los em qualquer página da web.
-Em conjunto com essa class, trabalha o "XembedHelper":https://github.com/klawdyo/New-Spaghetti-Core/wiki/lib-helpers-XembedXelper, que facilita a inclusão dessas informações na página.
+Em conjunto com essa class, trabalha o "Xembed", que facilita a inclusão dessas informações na página.
 
 h4. Observações
 
@@ -9,14 +9,20 @@ Por questões de performance, já que todos os sites suportados fazem uso de req
 
 h2. Sites suportados
 
+* "Band":http://www.band.com.br
 * "Dailymotion":http://www.dailymotion.com
-* "ESPN Brasil":http://espn.estadao.com.br/
+* "ESPN Brasil":http://espn.com.br/
 * "Esporte Interativo":http://www.esporteinterativo.com.br
+* -"Facebook":http://facebook.com - Exige autenticação oAuth - Não implementada-
+* "Flickr":http://flickr.com
+* "FoxSports":http://foxsports.com.br
 * "Globo TV":http://globotv.globo.com/
 * "iG":http://tvig.ig.com.br/
 * "Metacafe":http://www.metacafe.com/
 * "MSN Vídeo":http://video.br.msn.com/
+* "MySpace":http://myspace.com/
 * "OlharDigital":http://olhardigital.uol.com.br
+* -"PhotoBucket":http://photobucket.com/ - Erro não identificado-
 * "R7":http://videos.r7.com/
 * "RedeTV":http://www.redetv.com.br/
 * "Scribd":http://scribd.com/
@@ -25,6 +31,8 @@ h2. Sites suportados
 * "VideoLOG":http://videlog.tv
 * "Vimeo":http://vimeo.com/
 * "Vírgula":http://virgula.uol.com.br/
+* "WordpressTV":http://wordpress.tv/
+* "yFrog":http://yfrog.com/
 * "Youtube":http://www.youtube.com/
 
 
