@@ -11,6 +11,10 @@
     ---------------------------------------------------------------------------
     Retorna os dados de uma galeria de fotos do Flickr
 
+    ---------------------------------------------------------------------------
+    FORMATOS DAS URLS SUPORTADAS
+    ---------------------------------------------------------------------------
+    http://www.flickr.com/photos/shadowplay/sets/59801/
 */
 class flickr{
     

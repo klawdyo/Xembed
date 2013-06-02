@@ -1,6 +1,6 @@
 <?php
 
-
+/*
 class facebook{
     
     
@@ -17,4 +17,4 @@ class facebook{
         return array();
     }
     
-}
+}/**/

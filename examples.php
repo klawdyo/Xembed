@@ -58,7 +58,7 @@
         //'http://www.foxsports.com.br/videos/42664732-assista-aos-melhores-lances-de-chievo-1-x-3-lazio',
         
         #funnyordie
-        'http://www.funnyordie.com/videos/fa60d86785/anchorman-2-official-teaser-trailer-2?playlist=featured_videos',
+        //'http://www.funnyordie.com/videos/fa60d86785/anchorman-2-official-teaser-trailer-2?playlist=featured_videos',
         
         #globotv
         //'http://globotv.globo.com/rede-globo/globo-esporte-sp/t/edicoes/v/arouca-curte-a-primeira-convocacao-para-a-selecao-brasileira/2106745/',
@@ -115,7 +115,8 @@
         //'http://terratv.terra.com.br/videos/Noticias/vc-reporter/4204-436889/Bueiros-de-area-escolar-de-Ribeirao-Preto-oferecem-risco.htm',
         
         #uolmais
-        //'http://mais.uol.com.br/view/13228999',
+        'http://mais.uol.com.br/view/13228999',
+        'http://mais.uol.com.br/view/ofj6vrny8naf/goleiro-da-alemanha-franga-contra-os-eua-04028C9C376CDCA14326?types=A&',
         
         #videolog
         //'http://www.videolog.tv/video.php?id=824625',

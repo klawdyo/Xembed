@@ -11,6 +11,12 @@
     ---------------------------------------------------------------------------
     Retorna os dados dos vídeos do site da Band
 
+    ---------------------------------------------------------------------------
+    FORMATOS DAS URLS SUPORTADAS
+    ---------------------------------------------------------------------------
+    http://esporte.band.uol.com.br/futebol/selecao/copa-das-confederacoes/2013/videos.asp?id=[ID]&t=filipe-luis-se-apresenta-e-diz-quebraria-cara-pela-selecao
+    http://videos.band.uol.com.br/programa.asp?e=esporte&pr=os-donos-da-bola&v=[ID]
+
 */
 class band{
     
@@ -25,15 +31,6 @@ class band{
       */
     public static function details($id, $url){
         $data = Video::openGraph(null, Video::getContents($url, 2048));
-        
-        #image
-        //http://thumb.mais.uol.com.br/14471367-large.jpg?ver=2
-        
-        #title
-        //og:title
-        
-        #player
-        //'player' => 'http://player.mais.uol.com.br/embed_v2.swf?tv=2&mediaId=' . $id,
         
         return array(
             'title' => $data['title'],

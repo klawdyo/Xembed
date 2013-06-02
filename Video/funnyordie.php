@@ -11,9 +11,12 @@
     ---------------------------------------------------------------------------
     Retorna os dados dos vídeos adicionados no Funny or Die
 
+    ---------------------------------------------------------------------------
+    FORMATOS DAS URLS SUPORTADAS
+    ---------------------------------------------------------------------------
+    
 */
 class funnyordie{
-    
     
     /**
       * Pega os dados de vídeos adicionados no Funny or Die

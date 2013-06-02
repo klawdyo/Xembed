@@ -11,6 +11,10 @@
     ---------------------------------------------------------------------------
     Retorna os dados do site de vídeos Esporte Interativo
 
+    ---------------------------------------------------------------------------
+    FORMATOS DAS URLS SUPORTADAS
+    ---------------------------------------------------------------------------
+    http://br.esporteinterativo.yahoo.com/video/flamengo-sai-perdendo-por-2-010024496.html
 */
 class esporteinterativo{
     
@@ -28,9 +32,6 @@ class esporteinterativo{
         Video::$cUrl = true;
         
         $return = Video::openGraph($url);
-        
-        //http://br.esporteinterativo.yahoo.com/video/neymar-n%C3%BAmeros-veja-fez-craque-175851353.html
-        //http://movies.yahoo.com/video/neymar-n%C3%BAmeros-veja-fez-craque-175851353.html?format=embed&player_autoplay=false
         
         return array_merge( $return , array(
             'player'=>'http://movies.yahoo.com/video/' . $id . '.html?format=embed&player_autoplay=false',

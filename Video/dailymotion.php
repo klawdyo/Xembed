@@ -11,6 +11,11 @@
     ---------------------------------------------------------------------------
     Retorna os dados do site de vídeos Dailymotion
 
+    ---------------------------------------------------------------------------
+    FORMATOS DAS URLS SUPORTADAS
+    ---------------------------------------------------------------------------
+    http://www.dailymotion.com/video/xtlt9n_kate-middleton-pillada-en-topless_people
+                                     [    ID DO VÍDEO                              ]
 */
 class dailymotion{
     

@@ -11,6 +11,12 @@
     ---------------------------------------------------------------------------
     Retorna os dados do site de vídeos ESPN Brasil
 
+    ---------------------------------------------------------------------------
+    FORMATOS DAS URLS SUPORTADAS
+    ---------------------------------------------------------------------------
+    http://www.espn.com.br/video/331885_relembre-golacos-e-grandes-momentos-de-neymar-com-a-camisa-do-santos
+    http://espn.com.br/video/276730_campea-do-strikeforce-musa-ronda-rousey-posou-nua-para-a-revista-espn-nos-estados-unidos
+
 */
 class espnbrasil{
     

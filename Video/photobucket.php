@@ -28,9 +28,13 @@ class photobucket{
         http://s55.photobucket.com/albums/g134/klawdyossauro/imagens%20para%20foruns/
       
       http://static.pbsrc.com/flash/rss_slideshow.swf?rssFeed=http://s55.photobucket.com/albums/g134/klawdyossauro/feed.rss
-        
+        <div style="width:480px;text-align:right;">
+            <embed width="480" height="360" src="http://pic2.pbsrc.com/flash/rss_slideshow.swf" flashvars="rssFeed=http%3A%2F%2Ffeed55.photobucket.com%2Falbums%2Fg134%2Fklawdyossauro%2Ffeed.rss" type="application/x-shockwave-flash" wmode="transparent" /><a href="javascript:void(0);" target="_blank"><img src="http://pic.photobucket.com/share/icons/embed/btn_geturs.gif" style="border:none;" /></a><a href="http://s55.photobucket.com/user/klawdyossauro/library/" target="_blank"><img src="http://pic.photobucket.com/share/icons/embed/btn_viewall.gif" style="border:none;" alt="klawdyossauro&#039;s  album on Photobucket" /></a></div>
         //Exemplo de Object
         <embed width="480" height="360" src="http://static.pbsrc.com/flash/rss_slideshow.swf?rssFeed=http%3A%2F%2Ffeed55.photobucket.com%2Falbums%2Fg134%2Fklawdyossauro%2Ffeed.rss" type="application/x-shockwave-flash" wmode="transparent" />
+        
+        #title
+        //meta name="description" content="klawdyossauro's Library slideshow." />
         
         @bugs
         Aparentemente o Photobucket não está retornando os álbuns quando há mais de um.
@@ -41,14 +45,15 @@ class photobucket{
       */
     public static function details($id, $url, $parse){
         //Força o uso da barra final
-        $url = trim($url, '/') . '/';
-        
+        $url = trim($url, '/') . '/feed.rss';
+        pr($url);
         //Força o uso do cURL.
-        Video::$cUrl = true;
+        //Video::$cUrl = true;
         
         //
-        $data = Video::getContents($url);
-        
+        //$data = Video::getContents($url, 100);
+        //pr($data);
+        return array();
         //
         preg_match_all('%<(meta name|link rel)="(?<name>title|image_src|video_src)" (content|href)="(?<content>.*?)"%', $data, $output);
         
