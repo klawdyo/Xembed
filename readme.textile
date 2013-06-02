@@ -9,7 +9,7 @@ Por questões de performance, já que todos os sites suportados fazem uso de req
 
 h2. Sites suportados
 
-* "Band":http://www.band.com.br
+* "Band":http://videos.band.com.br
 * "Dailymotion":http://www.dailymotion.com
 * "ESPN Brasil":http://espn.com.br/
 * "Esporte Interativo":http://www.esporteinterativo.com.br
