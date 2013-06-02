@@ -308,7 +308,7 @@ class Video{
         'vimeo' => 'http://vimeo.com/api/oembed.xml?url=:url&format=json',
         //'virgula' => 'http://virgula.uol.com.br/ver/video/oembed.json?url=:url',
         //'wordpresstv' => 'http://public-api.wordpress.com/oembed/?format=json&url=:url&for=wpcom-auto-discovery',
-        'yfrog' => 'http://www.yfrog.com/api/oembed?url=:url',
+        //'yfrog' => 'http://www.yfrog.com/api/oembed?url=:url',
         'youtube' => 'http://www.youtube.com/oembed?url=:url&format=json',
     );
     
@@ -371,7 +371,7 @@ class Video{
         
         if(!in_array($provider, self::$loadedClasses)){
             self::$loadedClasses []= $provider;
-            require 'lib/utils/Video/' . $provider . '.php';
+            require 'Video/' . $provider . '.php';
         }
         
         $object = new $provider;
