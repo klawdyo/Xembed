@@ -496,13 +496,15 @@ class Video{
       *         usando o POST, para ter o mesmo efeito do file_get_contents()
       *     0.3 15/09/2012 Adicionado USERAGENT no cURL para simular o acesso via
       *         navegador e evitar bloqueio das conexões em alguns sites.
+      *     0.4 01/06/2013 Adicionado segundo parâmetro "filesize", que limita
+      *         o download dos dados, economizando banda
       *
       * @todo
       *     Armazenar o html na memória para caso seja necessário seu uso por
       *     vários métodos sem fazer duas requisições. O impedimento aqui é o
       *     gasto da memória.
       */
-    public static function getContents($url){
+    public static function getContents($url, $filesize = false){
         if(self::$cUrl){
             $ch = curl_init($url);
             curl_setopt($ch, CURLOPT_HEADER, false);
@@ -517,7 +519,12 @@ class Video{
             return $output;
         }
         else{
-            return file_get_contents($url);
+            if(!$filesize){
+                return file_get_contents($url);
+            }
+            else{
+                return fread(@fopen($url, 'r'), $filesize);
+            }
         }
     }
 }
