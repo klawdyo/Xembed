@@ -166,6 +166,7 @@ set_time_limit(0);
     
     02/06/2013
     [+] FunnyOrDie adicionado
+    [-] Photobucket removido
     
     ---------------------------------------------------------------------------
     KNOWN BUGS
@@ -259,7 +260,7 @@ class Video{
         
         //http://s55.photobucket.com/albums/g134/klawdyossauro/
         //http://s55.photobucket.com/albums/g134/klawdyossauro/imagens%20para%20foruns/
-        'photobucket' => '%photobucket.com/albums/(?<id>\w+)%', //06/10/2012 v.1
+        //'photobucket' => '%photobucket.com/albums/(?<id>\w+)%', //06/10/2012 v.1
         
         //http://esportes.r7.com/videos/exclusivo-paulinho-fala-sobre-selecao-futuro-no-corinthians-e-mundial/idmedia/5038d63d6b71cc1ec4d91969.html
         //http://rederecord.r7.com/video/mulas-do-trafico-ministra-fala-sobre-situacao-de-brasileiros-presos-no-exterior-50413aec92bb9fbad9b652a0
