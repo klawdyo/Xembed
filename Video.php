@@ -100,12 +100,12 @@ set_time_limit(0);
         para outro
     
     07/09/2012
-    [+] redetv adicionado. No entanto, está acontecendo erros no acesso à página,
+    [+] redetv() adicionado. No entanto, está acontecendo erros no acesso à página,
         provavelmente devido a bloqueios da requisição por parte do site da emissora
-    [-] redetv temporariamente removido.
+    [-] redetv() temporariamente removido.
     
     13/09/2012
-    [+] olhardigital adicionado
+    [+] olhardigital() adicionado
     [m] openGraph() modificado para receber o html de uma página ao invés de só
         a url. No entanto, um dos dois parâmetros deve estar preenchido, com prio
         ridade para a url.
@@ -117,8 +117,8 @@ set_time_limit(0);
         para simular um navegador e evitar bloqueio das requisições
     [+] redetv adicionado novamente. Antes o site bloqueava as requisições. Agora,
         após as mudanças em getContents(), o site não bloqueou em nenhum dos testes
-    [+] EsporteInterativo readicionado após as mudanças em getContents()
-    [+] Wordpress.TV adicionado
+    [+] EsporteInterativo() readicionado após as mudanças em getContents()
+    [+] WordpressTV() adicionado
     
     16/09/2012
     [m] Adicionado url encode à url em oEmbed()
@@ -278,8 +278,11 @@ class Video{
 
         //http://www.slideshare.net/haraldf/business-quotes-for-2011
         'slideshare' => '%(slideshare.net/([a-z0-9_-]+)/(?<id>[0-9a-z-]+))%', //25/08/2012 v.1
-        
-        'uolmais' => '%(mais.uol.com.br/view/(?<id>[0-9]+))%', //25/08/2012 v.1
+
+        //http://mais.uol.com.br/view/13228999
+        //http://mais.uol.com.br/view/ofj6vrny8naf/goleiro-da-alemanha-franga-contra-os-eua-04028C9C376CDCA14326?types=A&
+        //'uolmais' => '%(mais.uol.com.br/view/(?<id>[0-9]+))%', //25/08/2012 v.1
+        'uolmais' => '%(mais.uol.com.br/view/(?<id>[0-9a-z]+))%', //02/06/2013 v.2
         
         //http://www.videolog.tv/video.php?id=824625
         'videolog' => '%videolog.tv/video.php\?id=(?<id>\d+)%', //15/09/2012 v.1
