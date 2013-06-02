@@ -59,10 +59,13 @@ class r7{
       * Tipo de url suportada nesta versão:
       * http://esportes.r7.com/videos/exclusivo-paulinho-fala-sobre-selecao-futuro-no-corinthians-e-mundial/idmedia/5038d63d6b71cc1ec4d91969.html
       *
-      * @version 0.1 15/09/2012 Initial
+      * @version
+      *     0.1 15/09/2012 Initial
+      *     0.2 02/06/2013 Modificação para pegar só o HTML necessário
+      *         ao invés da página inteira
       */
     public static function v1($url, $parse){
-        $content = Video::getContents($url);
+        $content = Video::getContents($url, 1024);
         
         //Pegando o título
         preg_match('%<title>(?<title>.*)</title>%', $content, $output);
