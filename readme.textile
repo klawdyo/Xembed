@@ -29,7 +29,7 @@ h2. Sites suportados
 * "RedeTV":http://www.redetv.com.br/
 * "Scribd":http://scribd.com/
 * "Slideshare":http://www.slideshare.net/
-* "TV Info":http://info.abril.com.br/multimidia/tv/
+* -"TV Info":http://info.abril.com.br/multimidia/tv/ - Mesclado dentro de Abril-
 * "UOL Mais":http://mais.uol.com.br/
 * "VideoLOG":http://videlog.tv
 * "Vimeo":http://vimeo.com/
