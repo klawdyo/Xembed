@@ -40,6 +40,10 @@ require_once 'Video.php';
     [m] Todos os métodos transformados em Static
     [m] Classe renomeada para Xembed
     
+    23/06/2013
+    [m] Parâmetro $url renomeado para $data, podendo agora receber
+        somente a url do vídeo, ou um array com os dados para a geração
+        do embed
     ---------------------------------------------------------------------------
     KNOW BUGS
     ---------------------------------------------------------------------------
@@ -47,7 +51,8 @@ require_once 'Video.php';
     ---------------------------------------------------------------------------
     TO DO
     ---------------------------------------------------------------------------
-    
+    Adicionar tratamento de erros. Quando vier um erro, não exibir as imagens
+    quebradas, mostrar uma caixa padrão
  
 */
 
@@ -105,11 +110,19 @@ class Xembed extends Html{
       *     0.3 16/09/2012 O segundo parâmetro pode passar atributos para o elemento
       *         gerado.
       *     0.4 01/06/2013 Método transformado em static
+      *     0.5 23/06/2013 parâmetro $url renomeado para $data, podendo agora receber
+      *         um array com os dados para a geração do embed ou simplesmente a URL
+      *         do vídeo, como era antigamente.
+      *
+      * @param
+      *     $data mixed Pode receber a URL do vídeo ou os dados vindos de Video::details()
+      *     $params array Parâmetros passados para o html do iframe do código gerado
       */
-    public static function embed($url, $params = array()){
-        $data = Video::details($url);
+    public static function embed($data, $params = array()){
+        if(!is_array($data)){
+            $data = Video::details($url);
+        }
         
-        //pr($data);
         $playerType = (array_key_exists('playerType', $data) && $data['playerType'] == 'script') ?
                         'script' : 'iframe';
         
