@@ -28,18 +28,14 @@ class tvinfo{
       *     0.1 23/06/2013 Initial
       */
     public static function details($id, $url, $parse){
-        //$data = Video::oEmbed('funnyordie', $url);
         Video::$cUrl = true;
-        //$data = Video::getContents($url);
-        //pr($data);
+        
         $data = Video::openGraph($url);
-        //pr($parse);
-        //return array();
+        
         return array(
             'title' => $data['title'],
             'image' =>  $data['image'],
-            //http://videos.abril.com.br/info/id/5774531d2682f6cde5ac80411e486fda
-            'player' => 'http://videos.abril.com.br/info/id/' . $id,
+            'player' => 'http://videos.abril.com.br/info/id/' . $id, //http://videos.abril.com.br/info/id/5774531d2682f6cde5ac80411e486fda
             'playerType' => 'iframe',
         );
     }

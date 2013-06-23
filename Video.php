@@ -167,9 +167,12 @@ set_time_limit(0);
     02/06/2013
     [+] FunnyOrDie adicionado
     [-] Photobucket removido
+    [m] Adicionado parâmetro $filesize a getContents(), permitindo que apenas o
+        necessário seja baixado para reduzir o tamanho dos downloads
     
     23/06/2013
     [+] TVInfo adicionado
+    [m] Adicionado suporte do getContents ao 'filesize' quando cURL é usado
     ---------------------------------------------------------------------------
     KNOWN BUGS
     ---------------------------------------------------------------------------
@@ -516,6 +519,7 @@ class Video{
       *         navegador e evitar bloqueio das conexões em alguns sites.
       *     0.4 01/06/2013 Adicionado segundo parâmetro "filesize", que limita
       *         o download dos dados, economizando banda
+      *     0.5 23/06/2013 Adicionado suporte do 'filesize' às chamadas feitas com cURL
       *
       * @todo
       *     Armazenar o html na memória para caso seja necessário seu uso por
@@ -523,6 +527,9 @@ class Video{
       *     gasto da memória.
       */
     public static function getContents($url, $filesize = false){
+        //Verificando se $filesize é um número.
+        if(!is_int($filesize)) $filesize = false;
+        
         if(self::$cUrl){
             $ch = curl_init($url);
             curl_setopt($ch, CURLOPT_HEADER, false);
@@ -531,6 +538,9 @@ class Video{
             curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
+            
+            if($filesize) curl_setopt($ch, CURLOPT_RANGE, '0-' . $filesize);
+            
             $output = curl_exec($ch);
             curl_close($ch);
             
