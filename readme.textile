@@ -11,7 +11,7 @@ h2. Sites suportados
 
 * "Band":http://videos.band.com.br
 * "Dailymotion":http://www.dailymotion.com
-* "Editora Abril":http://www.abril.com.br ("Veja":http://veja.abril.com.br)
+* "Editora Abril":http://www.abril.com.br ("Veja":http://veja.abril.com.br/multimidia e "Exame":http://exame.abril.com.br/videos/)
 * "ESPN Brasil":http://espn.com.br/
 * "Esporte Interativo":http://www.esporteinterativo.com.br
 * -"Facebook":http://facebook.com - Exige autenticação oAuth - Não implementada-

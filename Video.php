@@ -175,6 +175,7 @@ set_time_limit(0);
     [m] Adicionado suporte do getContents ao 'filesize' quando cURL é usado
     [+] Editora Abril adicionada. Por enquanto, somente com suporte aos vídeos
         da Veja.
+    [m] Editora Abril agora suporta os links da Revista Exame
     ---------------------------------------------------------------------------
     KNOWN BUGS
     ---------------------------------------------------------------------------
@@ -207,7 +208,11 @@ class Video{
     public static $patterns = array(
         
         //http://veja.abril.com.br/multimidia/video/confira-os-gols-da-partida-brasil-x-italia-na-arena-fonte-nova
-        'abril' => '%http://(?<site>veja).abril.com.br/multimidia/video/(?<id>[a-z0-9-]+)%', //23/06/2013 v.1
+        //http://exame.abril.com.br/videos/direto-da-bolsa/parana-suspende-aumento-da-energia-e-leva-incerteza-a-bolsa
+        'abril' => array(
+            '%http://(?<site>veja).abril.com.br/multimidia/video/(?<id>[a-z0-9-]+)%', //23/06/2013 v.1
+            '%http://(?<site>exame).abril.com.br/videos/[a-z0-9-]+/(?<id>[a-z0-9-]+)%',
+        ),
         
         //'band' => '%http://videos.band.com.br/Exibir/[0-9A-Za-z-]+/(?<id>[0-9a-f]+)%', //16/05/2012 v.1
         //http://esporte.band.uol.com.br/futebol/selecao/copa-das-confederacoes/2013/videos.asp?id=14471367&t=filipe-luis-se-apresenta-e-diz-quebraria-cara-pela-selecao
