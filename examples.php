@@ -38,6 +38,8 @@
         'http://veja.abril.com.br/multimidia/video/falta-grandeza-a-dilma-rouseff',
         'http://exame.abril.com.br/videos/direto-da-bolsa/parana-suspende-aumento-da-energia-e-leva-incerteza-a-bolsa',
         'http://quatrorodas.abril.com.br/qr-tv/carros/volkswagen-golf-variant-6af463cab21c8523ff417cbef869eecb.shtml',
+        'http://info.abril.com.br/tvinfo-novo/infolab/acessorios/teclado-razer-oferece-conforto-gamers-c4df9b5e08569310c49fec0a365d8866.shtml',
+        'http://info.abril.com.br/tvinfo-novo/infolab/som-video/micro-system-vocacao-dock-avancada-5774531d2682f6cde5ac80411e486fda.shtml',
         
         #band
         //'http://esporte.band.uol.com.br/futebol/selecao/copa-das-confederacoes/2013/videos.asp?id=14471367&t=filipe-luis-se-apresenta-e-diz-quebraria-cara-pela-selecao',
@@ -119,10 +121,6 @@
         #terratv - Temporariamente removido
         //'http://terratv.terra.com.br/videos/Noticias/Destaques-Noticias/4404-436374/Mundo-linear-da-midia-acabou-diz-Aurelio-Lopes.htm',
         //'http://terratv.terra.com.br/videos/Noticias/vc-reporter/4204-436889/Bueiros-de-area-escolar-de-Ribeirao-Preto-oferecem-risco.htm',
-        
-        #tvinfo
-        //'http://info.abril.com.br/tvinfo-novo/infolab/acessorios/teclado-razer-oferece-conforto-gamers-c4df9b5e08569310c49fec0a365d8866.shtml',
-        //'http://info.abril.com.br/tvinfo-novo/infolab/som-video/micro-system-vocacao-dock-avancada-5774531d2682f6cde5ac80411e486fda.shtml',
         
         #uolmais
         //'http://mais.uol.com.br/view/13228999',

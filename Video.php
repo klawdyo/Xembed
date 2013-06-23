@@ -177,6 +177,7 @@ set_time_limit(0);
         da Veja.
     [m] Editora Abril agora suporta os links da Revista Exame
     [m] Editora Abril agora suporta os links da Quatro Rodas
+    [m] TVInfo foi mesclada com a classe da Editora Abril
     ---------------------------------------------------------------------------
     KNOWN BUGS
     ---------------------------------------------------------------------------
@@ -211,10 +212,14 @@ class Video{
         //http://veja.abril.com.br/multimidia/video/confira-os-gols-da-partida-brasil-x-italia-na-arena-fonte-nova
         //http://exame.abril.com.br/videos/direto-da-bolsa/parana-suspende-aumento-da-energia-e-leva-incerteza-a-bolsa
         //http://quatrorodas.abril.com.br/qr-tv/carros/volkswagen-golf-variant-6af463cab21c8523ff417cbef869eecb.shtml
+        //http://info.abril.com.br/tvinfo-novo/infolab/acessorios/teclado-razer-oferece-conforto-gamers-c4df9b5e08569310c49fec0a365d8866.shtml
+        //http://info.abril.com.br/tvinfo-novo/infolab/som-video/micro-system-vocacao-dock-avancada-5774531d2682f6cde5ac80411e486fda.shtml
         'abril' => array(
             '%http://(?<site>veja).abril.com.br/multimidia/video/(?<id>[a-z0-9-]+)%', //23/06/2013 v.1
             '%http://(?<site>exame).abril.com.br/videos/[a-z0-9-]+/(?<id>[a-z0-9-]+)%',
             '%http://(?<site>quatrorodas).abril.com.br/qr-tv/[a-z0-9-]+/[a-z0-9-]+-(?<id>[a-f0-9]+)\.shtml%',
+            '%http://(?<site>info).abril.com.br/tvinfo-novo/[a-z]+/[a-z-]+/[a-z0-9-]+-(?<id>[a-f0-9]+)\.shtml%',
+            
         ),
         
         //'band' => '%http://videos.band.com.br/Exibir/[0-9A-Za-z-]+/(?<id>[0-9a-f]+)%', //16/05/2012 v.1
@@ -297,10 +302,6 @@ class Video{
 
         //http://www.slideshare.net/haraldf/business-quotes-for-2011
         'slideshare' => '%(slideshare.net/([a-z0-9_-]+)/(?<id>[0-9a-z-]+))%', //25/08/2012 v.1
-        
-        //http://info.abril.com.br/tvinfo-novo/infolab/acessorios/teclado-razer-oferece-conforto-gamers-c4df9b5e08569310c49fec0a365d8866.shtml
-        //http://info.abril.com.br/tvinfo-novo/infolab/som-video/micro-system-vocacao-dock-avancada-5774531d2682f6cde5ac80411e486fda.shtml
-        'tvinfo' => '%http://info.abril.com.br/tvinfo-novo/[a-z]+/[a-z-]+/[a-z0-9-]+-(?<id>[a-f0-9]+)\.shtml%', //23/06/2013 v.1
         
         //http://mais.uol.com.br/view/13228999
         //http://mais.uol.com.br/view/ofj6vrny8naf/goleiro-da-alemanha-franga-contra-os-eua-04028C9C376CDCA14326?types=A&

@@ -37,8 +37,12 @@ class abril{
       *     0.2 23/06/2013 Métodos separados para adicionar suporte aos vários sites
       *         da Editora Abril. Nesta versão, somente as revistas Veja e Exame
       *         são suportadas
+      *     0.3 23/06/2013 Adicionado suporte aos links da QuatroRodas
+      *     0.4 23/06/2013 Eliminada a classe TVInfo, que foi mesclada com
+      *         essa classe da Editora Abril
       */
     public static function details($id, $url, $parse){
+        Video::$cUrl = false;
         if(in_array($parse['site'], array('veja','exame', 'quatrorodas'))){
             return self::$parse['site']($id, $url, $parse);
         }
@@ -91,5 +95,20 @@ class abril{
             'playerType' => 'iframe',
         );
    }
+    //23/06/2013
+    //Suporte para os links do padrão:
+    //http://info.abril.com.br/tvinfo-novo/infolab/acessorios/teclado-razer-oferece-conforto-gamers-c4df9b5e08569310c49fec0a365d8866.shtml
+    //http://info.abril.com.br/tvinfo-novo/infolab/som-video/micro-system-vocacao-dock-avancada-5774531d2682f6cde5ac80411e486fda.shtml
+    public static function info($id, $url, $parse){
+        Video::$cUrl = true;
+        $data = Video::openGraph($url);
+        
+        return array(
+            'title' => $data['title'],
+            'image' =>  $data['image'],
+            'player' => 'http://videos.abril.com.br/info/id/' . $id, //http://videos.abril.com.br/info/id/5774531d2682f6cde5ac80411e486fda
+            'playerType' => 'iframe',
+        );
+    }
     
 }
