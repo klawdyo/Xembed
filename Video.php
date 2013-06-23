@@ -173,6 +173,8 @@ set_time_limit(0);
     23/06/2013
     [+] TVInfo adicionado
     [m] Adicionado suporte do getContents ao 'filesize' quando cURL é usado
+    [+] Editora Abril adicionada. Por enquanto, somente com suporte aos vídeos
+        da Veja.
     ---------------------------------------------------------------------------
     KNOWN BUGS
     ---------------------------------------------------------------------------
@@ -203,6 +205,9 @@ class Video{
       * Armazena os padrões de busca dos IDs dentro das URLs
       */
     public static $patterns = array(
+        
+        //http://veja.abril.com.br/multimidia/video/confira-os-gols-da-partida-brasil-x-italia-na-arena-fonte-nova
+        'abril' => '%http://(?<site>veja).abril.com.br/multimidia/video/(?<id>[a-z0-9-]+)%', //23/06/2013 v.1
         
         //'band' => '%http://videos.band.com.br/Exibir/[0-9A-Za-z-]+/(?<id>[0-9a-f]+)%', //16/05/2012 v.1
         //http://esporte.band.uol.com.br/futebol/selecao/copa-das-confederacoes/2013/videos.asp?id=14471367&t=filipe-luis-se-apresenta-e-diz-quebraria-cara-pela-selecao

@@ -29,7 +29,9 @@
 </style>
 <body>
 <?php
-
+$data = Video::details($_GET['v']);
+echo '<h1>', $data['title'] , '</h1>';
+echo '<p>', $data['provider'], ' - <a href="', $data['url'], '">', $data['url'], '</a></p>';
 echo '<div class="xembed video">',
-        Xembed::embed($_GET['v']),
+        Xembed::embed($data),
     '</div>';

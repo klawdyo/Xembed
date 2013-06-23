@@ -32,7 +32,11 @@
     Xembed::$itemHtml = '<li class="xembed item"><dl><dt><img src=":image"></dt><dd>:provider</dd><dd>'. Xembed::link(':title','examples.view.php?v=:url').'</dd></dl></li>';
 
     echo Xembed::showcase(array(
-
+        
+        #abril
+        'http://veja.abril.com.br/multimidia/video/confira-os-gols-da-partida-brasil-x-italia-na-arena-fonte-nova',
+        'http://veja.abril.com.br/multimidia/video/falta-grandeza-a-dilma-rouseff',
+        
         #band
         //'http://esporte.band.uol.com.br/futebol/selecao/copa-das-confederacoes/2013/videos.asp?id=14471367&t=filipe-luis-se-apresenta-e-diz-quebraria-cara-pela-selecao',
         //'http://videos.band.uol.com.br/programa.asp?e=esporte&pr=os-donos-da-bola&v=14471500',
@@ -115,8 +119,8 @@
         //'http://terratv.terra.com.br/videos/Noticias/vc-reporter/4204-436889/Bueiros-de-area-escolar-de-Ribeirao-Preto-oferecem-risco.htm',
         
         #tvinfo
-        'http://info.abril.com.br/tvinfo-novo/infolab/acessorios/teclado-razer-oferece-conforto-gamers-c4df9b5e08569310c49fec0a365d8866.shtml',
-        'http://info.abril.com.br/tvinfo-novo/infolab/som-video/micro-system-vocacao-dock-avancada-5774531d2682f6cde5ac80411e486fda.shtml',
+        //'http://info.abril.com.br/tvinfo-novo/infolab/acessorios/teclado-razer-oferece-conforto-gamers-c4df9b5e08569310c49fec0a365d8866.shtml',
+        //'http://info.abril.com.br/tvinfo-novo/infolab/som-video/micro-system-vocacao-dock-avancada-5774531d2682f6cde5ac80411e486fda.shtml',
         
         #uolmais
         //'http://mais.uol.com.br/view/13228999',
