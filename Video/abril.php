@@ -43,7 +43,7 @@ class abril{
       */
     public static function details($id, $url, $parse){
         Video::$cUrl = false;
-        if(in_array($parse['site'], array('veja','exame', 'quatrorodas'))){
+        if(in_array($parse['site'], array('veja','exame', 'quatrorodas', 'info'))){
             return self::$parse['site']($id, $url, $parse);
         }
     }
