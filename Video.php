@@ -168,6 +168,8 @@ set_time_limit(0);
     [+] FunnyOrDie adicionado
     [-] Photobucket removido
     
+    23/06/2013
+    [+] TVInfo adicionado
     ---------------------------------------------------------------------------
     KNOWN BUGS
     ---------------------------------------------------------------------------
@@ -279,7 +281,11 @@ class Video{
 
         //http://www.slideshare.net/haraldf/business-quotes-for-2011
         'slideshare' => '%(slideshare.net/([a-z0-9_-]+)/(?<id>[0-9a-z-]+))%', //25/08/2012 v.1
-
+        
+        //http://info.abril.com.br/tvinfo-novo/infolab/acessorios/teclado-razer-oferece-conforto-gamers-c4df9b5e08569310c49fec0a365d8866.shtml
+        //http://info.abril.com.br/tvinfo-novo/infolab/som-video/micro-system-vocacao-dock-avancada-5774531d2682f6cde5ac80411e486fda.shtml
+        'tvinfo' => '%http://info.abril.com.br/tvinfo-novo/[a-z]+/[a-z-]+/[a-z0-9-]+-(?<id>[a-f0-9]+)\.shtml%', //23/06/2013 v.1
+        
         //http://mais.uol.com.br/view/13228999
         //http://mais.uol.com.br/view/ofj6vrny8naf/goleiro-da-alemanha-franga-contra-os-eua-04028C9C376CDCA14326?types=A&
         //'uolmais' => '%(mais.uol.com.br/view/(?<id>[0-9]+))%', //25/08/2012 v.1
@@ -408,6 +414,7 @@ class Video{
                 $return = self::match($url, self::$patterns[$provider]);
             }
             else{
+                //pr($pattern);
                 preg_match($pattern, $url, $return);
             }
             

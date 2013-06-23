@@ -114,9 +114,13 @@
         //'http://terratv.terra.com.br/videos/Noticias/Destaques-Noticias/4404-436374/Mundo-linear-da-midia-acabou-diz-Aurelio-Lopes.htm',
         //'http://terratv.terra.com.br/videos/Noticias/vc-reporter/4204-436889/Bueiros-de-area-escolar-de-Ribeirao-Preto-oferecem-risco.htm',
         
+        #tvinfo
+        'http://info.abril.com.br/tvinfo-novo/infolab/acessorios/teclado-razer-oferece-conforto-gamers-c4df9b5e08569310c49fec0a365d8866.shtml',
+        'http://info.abril.com.br/tvinfo-novo/infolab/som-video/micro-system-vocacao-dock-avancada-5774531d2682f6cde5ac80411e486fda.shtml',
+        
         #uolmais
-        'http://mais.uol.com.br/view/13228999',
-        'http://mais.uol.com.br/view/ofj6vrny8naf/goleiro-da-alemanha-franga-contra-os-eua-04028C9C376CDCA14326?types=A&',
+        //'http://mais.uol.com.br/view/13228999',
+        //'http://mais.uol.com.br/view/ofj6vrny8naf/goleiro-da-alemanha-franga-contra-os-eua-04028C9C376CDCA14326?types=A&',
         
         #videolog
         //'http://www.videolog.tv/video.php?id=824625',
