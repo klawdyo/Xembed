@@ -176,6 +176,7 @@ set_time_limit(0);
     [+] Editora Abril adicionada. Por enquanto, somente com suporte aos vídeos
         da Veja.
     [m] Editora Abril agora suporta os links da Revista Exame
+    [m] Editora Abril agora suporta os links da Quatro Rodas
     ---------------------------------------------------------------------------
     KNOWN BUGS
     ---------------------------------------------------------------------------
@@ -209,9 +210,11 @@ class Video{
         
         //http://veja.abril.com.br/multimidia/video/confira-os-gols-da-partida-brasil-x-italia-na-arena-fonte-nova
         //http://exame.abril.com.br/videos/direto-da-bolsa/parana-suspende-aumento-da-energia-e-leva-incerteza-a-bolsa
+        //http://quatrorodas.abril.com.br/qr-tv/carros/volkswagen-golf-variant-6af463cab21c8523ff417cbef869eecb.shtml
         'abril' => array(
             '%http://(?<site>veja).abril.com.br/multimidia/video/(?<id>[a-z0-9-]+)%', //23/06/2013 v.1
             '%http://(?<site>exame).abril.com.br/videos/[a-z0-9-]+/(?<id>[a-z0-9-]+)%',
+            '%http://(?<site>quatrorodas).abril.com.br/qr-tv/[a-z0-9-]+/[a-z0-9-]+-(?<id>[a-f0-9]+)\.shtml%',
         ),
         
         //'band' => '%http://videos.band.com.br/Exibir/[0-9A-Za-z-]+/(?<id>[0-9a-f]+)%', //16/05/2012 v.1
@@ -538,18 +541,22 @@ class Video{
       */
     public static function getContents($url, $filesize = false){
         //Verificando se $filesize é um número.
-        if(!is_int($filesize)) $filesize = false;
+        if(!is_int($filesize)) {
+            $filesize = false;
+        }
         
         if(self::$cUrl){
             $ch = curl_init($url);
+            
+            if($filesize) {
+                curl_setopt($ch, CURLOPT_RANGE, '0-' . $filesize);
+            }
             curl_setopt($ch, CURLOPT_HEADER, false);
             curl_setopt($ch, CURLOPT_PORT, 80);
             curl_setopt($ch, CURLOPT_HTTPGET, true);
             curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
-            
-            if($filesize) curl_setopt($ch, CURLOPT_RANGE, '0-' . $filesize);
             
             $output = curl_exec($ch);
             curl_close($ch);

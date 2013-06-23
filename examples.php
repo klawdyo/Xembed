@@ -37,6 +37,7 @@
         'http://veja.abril.com.br/multimidia/video/confira-os-gols-da-partida-brasil-x-italia-na-arena-fonte-nova',
         'http://veja.abril.com.br/multimidia/video/falta-grandeza-a-dilma-rouseff',
         'http://exame.abril.com.br/videos/direto-da-bolsa/parana-suspende-aumento-da-energia-e-leva-incerteza-a-bolsa',
+        'http://quatrorodas.abril.com.br/qr-tv/carros/volkswagen-golf-variant-6af463cab21c8523ff417cbef869eecb.shtml',
         
         #band
         //'http://esporte.band.uol.com.br/futebol/selecao/copa-das-confederacoes/2013/videos.asp?id=14471367&t=filipe-luis-se-apresenta-e-diz-quebraria-cara-pela-selecao',
