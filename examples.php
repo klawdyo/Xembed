@@ -34,12 +34,12 @@
     echo Xembed::showcase(array(
         
         #abril
-        'http://veja.abril.com.br/multimidia/video/confira-os-gols-da-partida-brasil-x-italia-na-arena-fonte-nova',
-        'http://veja.abril.com.br/multimidia/video/falta-grandeza-a-dilma-rouseff',
-        'http://exame.abril.com.br/videos/direto-da-bolsa/parana-suspende-aumento-da-energia-e-leva-incerteza-a-bolsa',
-        'http://quatrorodas.abril.com.br/qr-tv/carros/volkswagen-golf-variant-6af463cab21c8523ff417cbef869eecb.shtml',
-        'http://info.abril.com.br/tvinfo-novo/infolab/acessorios/teclado-razer-oferece-conforto-gamers-c4df9b5e08569310c49fec0a365d8866.shtml',
-        'http://info.abril.com.br/tvinfo-novo/infolab/som-video/micro-system-vocacao-dock-avancada-5774531d2682f6cde5ac80411e486fda.shtml',
+        //'http://veja.abril.com.br/multimidia/video/confira-os-gols-da-partida-brasil-x-italia-na-arena-fonte-nova',
+        //'http://veja.abril.com.br/multimidia/video/falta-grandeza-a-dilma-rouseff',
+        //'http://exame.abril.com.br/videos/direto-da-bolsa/parana-suspende-aumento-da-energia-e-leva-incerteza-a-bolsa',
+        //'http://quatrorodas.abril.com.br/qr-tv/carros/volkswagen-golf-variant-6af463cab21c8523ff417cbef869eecb.shtml',
+        //'http://info.abril.com.br/tvinfo-novo/infolab/acessorios/teclado-razer-oferece-conforto-gamers-c4df9b5e08569310c49fec0a365d8866.shtml',
+        //'http://info.abril.com.br/tvinfo-novo/infolab/som-video/micro-system-vocacao-dock-avancada-5774531d2682f6cde5ac80411e486fda.shtml',
         
         #band
         //'http://esporte.band.uol.com.br/futebol/selecao/copa-das-confederacoes/2013/videos.asp?id=14471367&t=filipe-luis-se-apresenta-e-diz-quebraria-cara-pela-selecao',
@@ -143,6 +143,11 @@
         //'http://wordpress.tv/2013/02/14/andrew-nacin-y-u-no-code-well/',
         //'http://wordpress.tv/2013/03/17/chris-lema-success-in-distributed-contexts/',
         //'http://wordpress.tv/2013/05/20/bronson-quick-my-wordpress-development-workflow/',
+        
+        #xvideos
+        'http://www.xvideos.com/video5032052/free_web_cam_sex_chat',
+        'http://www.xvideos.com/video3374422/perfect_teagen_presley_gets_an_anal_creampie_in_her_tight_teen_ass',
+        'http://www.xvideos.com/video4165253/his_friend_s_super_busty_mom_',
         
         #yfrog
         //'http://twitter.yfrog.com/mzbnczogslfypthuglyxolnaz',

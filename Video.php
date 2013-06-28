@@ -178,6 +178,10 @@ set_time_limit(0);
     [m] Editora Abril agora suporta os links da Revista Exame
     [m] Editora Abril agora suporta os links da Quatro Rodas
     [m] TVInfo foi mesclada com a classe da Editora Abril
+    
+    28/06/2013
+    [+] Xvideos adicionado.
+    
     ---------------------------------------------------------------------------
     KNOWN BUGS
     ---------------------------------------------------------------------------
@@ -321,6 +325,9 @@ class Video{
         
         //http://wordpress.tv/2012/09/09/kirk-wight-getting-started-with-theme-development/
         'wordpresstv' => '%wordpress.tv/\d{4}/\d{2}/\d{2}/(?<id>[0-9a-z-]+)/?%', //15/09/2012 v.1
+        
+        //http://www.xvideos.com/video5032052/free_web_cam_sex_chat
+        'xvideos' => '%xvideos.com/video(?<id>[0-9]+)/%', //28/06/2013 v.1
         
         //http://twitter.yfrog.com/mzbnczogslfypthuglyxolnaz
         'yfrog' => '%yfrog.(com|us)/(?<id>[a-z0-9]+)%', //11/10/2012 v.1
