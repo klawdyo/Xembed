@@ -170,9 +170,9 @@
         //'http://xhamster.com/movies/1525582/her_first_time_orgy_exposed.html',
         
         #youporn
-        'http://www.youporn.com/watch/8296838/i-love-em-tick-black-market/?from=vbwn',
-        'http://www.youporn.com/watch/8451044/cum-swapping-sluts-love-that-black-cock-black-market/?from=related3&al=5&from_id=8451044&pos=2',
-        'http://www.youporn.com/watch/8296822/boom-look-at-em-butts-black-market/?from=related3&al=5&from_id=8296822&pos=1',
+        //'http://www.youporn.com/watch/8296838/i-love-em-tick-black-market/?from=vbwn',
+        //'http://www.youporn.com/watch/8451044/cum-swapping-sluts-love-that-black-cock-black-market/?from=related3&al=5&from_id=8451044&pos=2',
+        //'http://www.youporn.com/watch/8296822/boom-look-at-em-butts-black-market/?from=related3&al=5&from_id=8296822&pos=1',
         
         
         
