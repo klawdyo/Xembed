@@ -40,7 +40,9 @@ h2. Sites suportados
 
 h3. Adultos
 
+* "Xhamster":http://xhamster.com
 * "Xvideos":http://xvideos.com
+* "Youporn":http://youporn.com
 
 
 h2. Métodos

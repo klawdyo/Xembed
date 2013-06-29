@@ -144,11 +144,6 @@
         //'http://wordpress.tv/2013/03/17/chris-lema-success-in-distributed-contexts/',
         //'http://wordpress.tv/2013/05/20/bronson-quick-my-wordpress-development-workflow/',
         
-        #xvideos
-        'http://www.xvideos.com/video5032052/free_web_cam_sex_chat',
-        'http://www.xvideos.com/video3374422/perfect_teagen_presley_gets_an_anal_creampie_in_her_tight_teen_ass',
-        'http://www.xvideos.com/video4165253/his_friend_s_super_busty_mom_',
-        
         #yfrog
         //'http://twitter.yfrog.com/mzbnczogslfypthuglyxolnaz',
         //'http://twitter.yfrog.com/jv4a5grijbjslronrzlhdqzqz',
@@ -158,4 +153,29 @@
         //'http://www.youtube.com/watch?v=r_vf4ENRua8&feature=g-all-u',
         //'http://youtu.be/r_vf4ENRua8',
         //'http://youtu.be/r_vf4ENRua8&feature=g-all-u',
+        
+        #
+        #   ADULTOS
+        #
+        
+        
+        #xvideos
+        //'http://www.xvideos.com/video5032052/free_web_cam_sex_chat',
+        //'http://www.xvideos.com/video3374422/perfect_teagen_presley_gets_an_anal_creampie_in_her_tight_teen_ass',
+        //'http://www.xvideos.com/video4165253/his_friend_s_super_busty_mom_',
+        
+        #xhamster
+        //'http://xhamster.com/movies/1594325/schoolgirl_chokes_on_orgy_cocks.html',
+        //'http://xhamster.com/movies/1542126/broke_slut_pays_her_way_with_pussy.html',
+        //'http://xhamster.com/movies/1525582/her_first_time_orgy_exposed.html',
+        
+        #youporn
+        'http://www.youporn.com/watch/8296838/i-love-em-tick-black-market/?from=vbwn',
+        'http://www.youporn.com/watch/8451044/cum-swapping-sluts-love-that-black-cock-black-market/?from=related3&al=5&from_id=8451044&pos=2',
+        'http://www.youporn.com/watch/8296822/boom-look-at-em-butts-black-market/?from=related3&al=5&from_id=8296822&pos=1',
+        
+        
+        
+        
+        
 /**/));

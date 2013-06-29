@@ -181,6 +181,8 @@ set_time_limit(0);
     
     28/06/2013
     [+] Xvideos adicionado.
+    [+] Xhamster adicionado.
+    [+] Youporn adicionado.
     
     ---------------------------------------------------------------------------
     KNOWN BUGS
@@ -326,13 +328,24 @@ class Video{
         //http://wordpress.tv/2012/09/09/kirk-wight-getting-started-with-theme-development/
         'wordpresstv' => '%wordpress.tv/\d{4}/\d{2}/\d{2}/(?<id>[0-9a-z-]+)/?%', //15/09/2012 v.1
         
-        //http://www.xvideos.com/video5032052/free_web_cam_sex_chat
-        'xvideos' => '%xvideos.com/video(?<id>[0-9]+)/%', //28/06/2013 v.1
-        
         //http://twitter.yfrog.com/mzbnczogslfypthuglyxolnaz
         'yfrog' => '%yfrog.(com|us)/(?<id>[a-z0-9]+)%', //11/10/2012 v.1
         
         'youtube' => '(((youtube.com(.br)?/watch/?\?v=)|(youtu.be/))(?<id>[0-9a-zA-Z_-]+))', //24/08/2012 v.1
+        
+        //
+        //  ADULTOS
+        //
+        
+        //http://xhamster.com/movies/1594325/schoolgirl_chokes_on_orgy_cocks.html
+        'xhamster' => '%xhamster.com/movies/(?<id>[0-9]+)/%',
+        
+        //http://www.xvideos.com/video5032052/free_web_cam_sex_chat
+        'xvideos' => '%xvideos.com/video(?<id>[0-9]+)/%', //28/06/2013 v.1
+        
+        //http://www.youporn.com/watch/8296838/i-love-em-tick-black-market/?from=vbwn
+        'youporn' => '%youporn.com/watch/(?<id>[0-9]+)/(?<slug>[a-z0-9-]+)%',
+
     );
     
     /**
